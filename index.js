@@ -49,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	function loadEntries() {
 		rawData = localStorage.getItem("jcmsTODO")
 		entries = JSON.parse(rawData)
-		console.log(entries)
+		if (entries == null) {
+			return
+		}
 		for (let index = 0; index < entries.length; index++) {
 			const text = entries[index][0];
 			const checked = entries[index][1];
