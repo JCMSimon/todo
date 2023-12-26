@@ -118,7 +118,7 @@ body {
 	font-size: 2.5vmin;
 	position: fixed;
 	bottom: 1vmin;
-	right: 1vmin;
+	right: 2vmin;
 	opacity: 0.3;
 	transition: 0.25s;
 }
