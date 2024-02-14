@@ -27,4 +27,16 @@
 		</div>
 		<a class="githubLink" href="https://github.com/JustCallMeSimon26/todo" target="_blank">Source</a>
 	</body>
-</html>
+	<!-- This is registering the service worker for offline shits -->
+	<script>
+		if ('serviceWorker' in navigator) {
+		  navigator.serviceWorker.register('/service-worker.js')
+			.then(registration => {
+			  console.log('Service Worker registered with scope:', registration.scope);
+			})
+			.catch(error => {
+			  console.error('Service Worker registration failed:', error);
+			});
+		}
+	  </script>
+	</html>
